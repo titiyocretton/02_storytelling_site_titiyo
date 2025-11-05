@@ -1,0 +1,42 @@
+.section-parallax {
+  border: 5px dashed gray;
+
+  // il faudra adapter height à la hauteur que ça fera a la fin avec les
+  // deplacement de screen
+  // height: 100vh;
+  h2 {
+    padding-bottom: 150px;
+  }
+  div {
+    position: relative;
+    z-index: 5;
+    // opacity: 0.5;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.section-parallax .screen-a {
+  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
+  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+  z-index: 10;
+}
+.section-parallax .screen-b {
+  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
+  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+  z-index: 10;
+}
+
+.section-parallax .screen-c {
+  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
+  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+  z-index: 10;
+}
+
+.section-parallax .screen-d {
+  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
+  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+  top: 840px;
+  z-index: 10;
+}

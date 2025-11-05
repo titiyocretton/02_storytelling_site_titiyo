@@ -1,0 +1,18 @@
+/* slider mask */
+.slider-mask {
+  border: 5px solid black;
+  height: 100vh;
+}
+
+/* slider track */
+.slider-track {
+  height: 100%;
+  display: inline-flex;
+  border: 5px solid red;
+}
+
+/* slider item (screen) */
+.slider-track .screen {
+  width: 100vw;
+  border: 5px solid blue;
+}
