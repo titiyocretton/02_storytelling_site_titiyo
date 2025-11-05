@@ -1,9 +1,8 @@
-.section-parallax {
-  border: 5px dashed gray;
-
+.intro-section {
   // il faudra adapter height à la hauteur que ça fera a la fin avec les
   // deplacement de screen
-  // height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   h2 {
     padding-bottom: 150px;
   }
@@ -17,25 +16,40 @@
   }
 }
 
-.section-parallax .screen-a {
-  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
-  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+.intro-section .screen-a {
   z-index: 10;
 }
-.section-parallax .screen-b {
-  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
-  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+.intro-section .screen-b {
   z-index: 10;
 }
 
-.section-parallax .screen-c {
-  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
-  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+.intro-section .screen-c {
   z-index: 10;
+  top: -120vh;
 }
 
-.section-parallax .screen-d {
+.intro-section .screen-d {
+  z-index: 10;
+  top: -130vh;
+}
+
+.intro-section .screen-e {
   // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
   // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
   z-index: 10;
+  top: -70vh;
+}
+
+.intro-section .screen-f {
+  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
+  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+  z-index: 10;
+  top: 40vh;
+}
+
+.intro-section .screen-g {
+  // j'ai ajouter des pixel aux top pour rendre l'animation de ce screen plus rapide
+  // c'est un peu du réglage fin, si ça vous bloque c'est peut-etre nécessaire
+  z-index: 10;
+  top: 480vh;
 }
