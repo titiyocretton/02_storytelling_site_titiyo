@@ -1,6 +1,5 @@
 /* slider mask */
 .slider-mask {
-  border: 5px solid black;
   height: 100vh;
 }
 
@@ -8,11 +7,39 @@
 .slider-track {
   height: 100%;
   display: inline-flex;
-  border: 5px solid red;
-}
 
-/* slider item (screen) */
-.slider-track .screen {
-  width: 100vw;
-  border: 5px solid blue;
+  .horizontal-container-1 {
+    width: 100vw;
+    padding: 80px;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .horizontal-container-2 {
+    display: flex;
+    padding: 0 110px;
+    // align-items: center;
+    // justify-content: flex-start;
+  }
+
+  .horizontal-container-2 > :first-child {
+    margin: 50px 125px 50px 0;
+  }
+
+  .horizontal-container-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80vw;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 30px 190px 30px 0;
+    img {
+      max-width: 830px;
+    }
+    img:last-child {
+      align-self: flex-end;
+    }
+  }
 }

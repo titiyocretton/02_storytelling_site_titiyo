@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import { _horizontal } from "gsap/Observer";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -86,3 +87,24 @@ gsap
     },
     0
   );
+
+// scroll _horizontal
+
+gsap.to(".slider-track", {
+  scrollTrigger: {
+    trigger: ".slider-mask",
+    // start c'est le moment ou l'animation commence dans le site,
+    // le premier top c'est par rapport à l'élément concerné,
+    // le deuxieme c'est par rapport à la page
+    start: "top top",
+    // l'emplacement de end change la vitesse du scroll horizontal,
+    // plus le chiffre à % est grand, plus il sera lent
+    end: "+=300%",
+    pin: true,
+    scrub: true,
+    // markers: true,
+  },
+  // x définit jusqu'ou la section va a droite, on peut le calculer (mais j'ai pas compris comment) ou faire à taton, bonne chance !
+  x: "-75%",
+  ease: "sine.inOut",
+});
