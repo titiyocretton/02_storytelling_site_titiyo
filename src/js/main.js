@@ -31,7 +31,7 @@ gsap
       end: "7000px bottom",
       scrub: 0.3, //le chiffre donne un effet plus lisse à l'animation
       pin: true,
-      markers: true,
+      // markers: true,
       ease: "linear", //je sais pas si cette ligne est utile
     },
   })
@@ -107,4 +107,32 @@ gsap.to(".slider-track", {
   // x définit jusqu'ou la section va a droite, on peut le calculer (mais j'ai pas compris comment) ou faire à taton, bonne chance !
   x: "-75%",
   ease: "sine.inOut",
+});
+
+// section thunder
+
+gsap.from(".thunder-left", {
+  scrollTrigger: {
+    trigger: ".thunders",
+    start: "140px center",
+    end: "170px center",
+    scrub: 1,
+    markers: true,
+  },
+  opacity: 0,
+  left: "-80vw",
+  top: "-600px",
+});
+
+gsap.from(".thunder-right", {
+  scrollTrigger: {
+    trigger: ".thunders",
+    start: "240px center",
+    end: "270px center",
+    scrub: 1,
+    markers: true,
+  },
+  opacity: 0,
+  left: "80vw",
+  top: "-600px",
 });
