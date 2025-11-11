@@ -10,8 +10,11 @@
 
   .horizontal-container-1 {
     width: 100vw;
-    padding: 80px;
+    padding: 0 80px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       max-width: 100%;
     }
@@ -19,14 +22,13 @@
 
   .horizontal-container-2 {
     display: flex;
-    padding: 0 110px;
-    gap: 160px;
+    padding: 0 160px 0 110px;
     // align-items: center;
     // justify-content: flex-start;
   }
 
   .horizontal-container-2 > :first-child {
-    margin: 50px 125px 50px 0;
+    margin: 50px 160px 50px 0;
   }
 
   .horizontal-container-3 {
@@ -56,4 +58,10 @@
 
 .horizontal-container-3 > div:nth-child(2) {
   justify-content: flex-end;
+}
+
+.horizontal-container-4 {
+  display: flex;
+  gap: 160px;
+  margin: 120px 0;
 }
