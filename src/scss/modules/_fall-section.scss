@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 2500px;
   img {
     max-width: 100%;
     position: relative;
@@ -22,4 +21,9 @@
 
 .fall-section > div:nth-child(3) {
   padding-bottom: 300px;
+}
+
+.fall-container-snow {
+  display: flex;
+  align-items: center;
 }

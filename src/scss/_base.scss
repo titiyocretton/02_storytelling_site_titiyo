@@ -11,9 +11,10 @@ a {
 img,
 video {
   display: block;
+  // width: 100%;
 }
 
 // empeche scroll droite et gauche
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }

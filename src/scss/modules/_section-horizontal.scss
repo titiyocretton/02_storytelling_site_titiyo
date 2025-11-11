@@ -11,6 +11,7 @@
   .horizontal-container-1 {
     width: 100vw;
     padding: 80px;
+    flex-shrink: 0;
     img {
       max-width: 100%;
     }
@@ -19,6 +20,7 @@
   .horizontal-container-2 {
     display: flex;
     padding: 0 110px;
+    gap: 160px;
     // align-items: center;
     // justify-content: flex-start;
   }
@@ -30,16 +32,28 @@
   .horizontal-container-3 {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 80vw;
     align-items: flex-start;
-    justify-content: space-around;
-    padding: 30px 190px 30px 0;
+    justify-content: space-between;
+    margin: 30px 0;
+    flex-shrink: 0;
+
     img {
-      max-width: 830px;
+      height: 100%;
     }
-    img:last-child {
+    div:last-child {
       align-self: flex-end;
     }
   }
+}
+
+.horizontal-container-3 > div {
+  height: 46%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.horizontal-container-3 > div:nth-child(2) {
+  justify-content: flex-end;
 }
