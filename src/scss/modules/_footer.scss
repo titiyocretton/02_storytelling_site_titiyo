@@ -1,5 +1,12 @@
 footer {
-  background: red;
-  z-index: 3;
-  position: absolute;
+  background: white;
+  padding: 12px 46px;
+  font-family: "Novel Sans Pro";
+  display: flex;
+  gap: 47px;
+  align-items: center;
+
+  .space {
+    flex-grow: 1;
+  }
 }
