@@ -8,5 +8,30 @@
 @import "modules/section-parallax";
 @import "modules/thunder-section";
 @import "modules/end-section";
+@import "modules/footer";
 
 @import "bootstrap/scss/bootstrap-grid";
+
+/* 
+
+truc à faire :
+
+end-section : 
+  flou du background
+  ajouter les liens des font dans le projet
+  revoir les graisses ou les taille, c'est pas exacte comme ça.
+  animation tigre se releve
+
+parallax section :
+  refaire la parallax, comme ça c'est lourd et pas responsive.
+
+bouton aller à la fin !!
+
+fall :
+  gerer la chute de la bestiole 
+  facultatif -> movement images
+
+global détails :
+  hover
+
+*/
