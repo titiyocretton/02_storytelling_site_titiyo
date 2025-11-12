@@ -1,7 +1,14 @@
 .thunder-section {
   position: relative;
   // top: -30vh;
-  margin-top: -30vh;
+  margin-top: 3500px;
+  background: linear-gradient(
+    180deg,
+    #ffffff00 0%,
+    #ffffff00 50%,
+    #ffffff 55%,
+    #ffffff 100%
+  );
   img {
     width: 100%;
   }

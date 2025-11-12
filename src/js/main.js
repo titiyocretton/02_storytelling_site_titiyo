@@ -20,6 +20,81 @@ gsap.registerPlugin(ScrollTrigger);
 //   left: "80vw",
 // });
 
+// nouveau test parallax
+
+// gsap.to(".screen-b1", {
+//   scrollTrigger: {
+//     trigger: ".intro-section1",
+//     start: "bottom bottom",
+//     end: "bottom top",
+//     pin: true,
+//     scrub: true,
+//     markers: true,
+//   },
+//   top: 0,
+// });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".intro-section1",
+      start: "bottom bottom",
+      end: "4000px top",
+      scrub: true, //le chiffre donne un effet plus lisse à l'animation
+      pin: true,
+      markers: true,
+    },
+  })
+  .to(
+    ".screen-a1",
+    {
+      top: "-150vh",
+    },
+    0
+  )
+  .to(
+    ".screen-b1",
+    {
+      top: "-200vh",
+    },
+    0
+  )
+  .to(
+    ".screen-c1",
+    {
+      top: "-140vh",
+    },
+    0.15
+  )
+  .to(
+    ".screen-d1",
+    {
+      top: "-140vh",
+    },
+    0.2
+  )
+  .to(
+    ".screen-e1",
+    {
+      top: "-140vh",
+    },
+    0.35
+  )
+  .to(
+    ".screen-f1",
+    {
+      top: "-160vh",
+    },
+    0.4
+  )
+  .to(
+    ".screen-g1",
+    {
+      top: "-170vh",
+    },
+    0.55
+  );
+
 // deuxieme test paralax
 
 gsap
@@ -117,7 +192,7 @@ gsap.from(".thunder-left", {
     start: "140px center",
     end: "170px center",
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
   opacity: 0,
   left: "-80vw",
@@ -130,7 +205,7 @@ gsap.from(".thunder-right", {
     start: "240px center",
     end: "270px center",
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
   opacity: 0,
   left: "80vw",

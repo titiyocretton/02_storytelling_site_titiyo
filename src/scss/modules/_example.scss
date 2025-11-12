@@ -1,0 +1,46 @@
+//  <div class="intro-section1">
+//       <div class="parallax-container1">
+//         <div class="screen-a1">
+
+.intro-section1 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+
+  img {
+    width: 100%;
+  }
+
+  // .screen-a1 {
+  //   top: 2800px;
+  // }
+  // .screen-b1 {
+  //   top: 2350px;
+  // }
+  // .screen-c1 {
+  //   top: 1600px;
+  // }
+  // .screen-d1 {
+  //   top: 1200px;
+  // }
+  // .screen-e1 {
+  //   top: 800px;
+  // }
+  // .screen-f1 {
+  //   top: 500px;
+  // }
+  // .screen-g1 {
+  //   top: 250px;
+  // }
+}
+
+.intro-container {
+  div {
+    position: relative;
+    height: 0;
+  }
+}
+
+.screen-a1 {
+  position: relative;
+}
