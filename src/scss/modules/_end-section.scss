@@ -36,10 +36,32 @@
 
 .end-section {
   padding: 918px 0 42px;
-  background-image: url(../img/section-end/background-1.png);
+  background-image: url(../img/section-end/background-1.png?as=webp);
   background-position: bottom;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   img {
     width: 100%;
+  }
+  overflow: hidden;
+}
+
+.end-tiger-vide {
+  position: relative;
+  background: rgba(255, 0, 0, 0.275);
+  height: 0;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .end-tiger-container {
+    position: relative;
+    top: 19vh;
+  }
+
+  img {
+    width: 425px;
   }
 }

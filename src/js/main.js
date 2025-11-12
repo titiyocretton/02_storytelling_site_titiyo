@@ -187,22 +187,6 @@ gsap.from(".thunder-right", {
 
 /* -------- chute de la bestiole -------- */
 
-// // ici je ralenti le screen a, pour que le plan au dessus soit plus rapide
-// gsap.to(".case-fixed", {
-//   scrollTrigger: {
-//     trigger: ".case-fixed",
-//     // placer stard à l'endroit ou screen b commence a etre visible
-//     start: "center center",
-//     // placer end a l'endroit ou screen a n'est plus visible
-//     end: "2000px center",
-//     scrub: true,
-//     // markers: true,
-//   },
-//   // chiffre du top changera la vitesse
-//   top: "1800",
-//   ease: "linear",
-// });
-
 gsap
   .timeline({
     scrollTrigger: {
@@ -234,3 +218,13 @@ gsap
     },
     2
   );
+
+gsap.from(".end-tiger-container", {
+  scrollTrigger: {
+    trigger: ".end-section",
+    start: "50% center",
+    // markers: true,
+  },
+  top: "40vh",
+  delay: 0.8,
+});
