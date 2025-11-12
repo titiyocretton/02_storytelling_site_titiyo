@@ -1,0 +1,65 @@
+.end-background {
+  width: 100vw;
+  background: red;
+  img {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.end-container {
+  padding-top: 270px;
+
+  button {
+    padding: 20px 35px;
+    border-radius: 9px;
+    border: 3px solid #c7b3ce;
+    background: rgba(255, 255, 255, 0.66);
+    backdrop-filter: blur(15.050000190734863px);
+    font-family: "Novel Sans Pro";
+    font-size: 29px;
+    font-weight: 500;
+  }
+}
+
+.end-text-container {
+  padding-top: 12px; /*j'ai arrondi par rapport à la maquette*/
+  font-family: "Novel Sans Pro";
+
+  p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 24px;
+  }
+
+  span {
+    font-size: 44px;
+    line-height: 100%; /* j'ai arrondi par rapport à la maquette */
+    font-family: Capitol;
+  }
+
+  .end-detail-container {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 120%;
+  }
+
+  p:first-child {
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 12px; /* arrondi */
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 650;
+    line-height: 122.923%; /* 24.585px */
+  }
+}
+
+.end-section {
+  padding-top: 650px;
+}
