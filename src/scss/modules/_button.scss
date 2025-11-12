@@ -1,20 +1,35 @@
-.button-go-shop {
-  padding: 8px 12px;
+.button-fixed-container {
   position: fixed;
   z-index: 1000;
   right: 30px;
   top: 24px;
-  font-family: "Novel Sans Pro";
+  display: flex;
+  justify-content: flex-end;
   font-size: 20px;
   font-weight: 500;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.46);
-  backdrop-filter: blur(3.6500000953674316px);
-  border: none;
-  transition: 0.3s;
-  a {
-    text-decoration: none;
+
+  button {
+    background: red;
+    padding: 8px 12px;
+    transition: 0.3s;
+    font-family: "Novel Sans Pro";
+    border-radius: 9px;
+    border: none;
+    background: rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(3.6500000953674316px);
+    a {
+      text-decoration: none;
+    }
   }
+}
+
+.button-go-start {
+  display: none;
+  opacity: 0;
+}
+
+.button-go-shop {
+  position: relative;
 }
 
 .button-go-shop:hover {
@@ -22,6 +37,12 @@
     --Environment-gradient,
     linear-gradient(272deg, #bc63da 0%, #dd533d 96.12%)
   );
+  color: white;
+}
+
+.button-go-start:hover {
+  border-radius: 9px;
+  background: linear-gradient(272deg, #c7b3ce 0%, #bfcdd5 96.12%);
   color: white;
 }
 
@@ -35,5 +56,20 @@
     font-family: "Novel Sans Pro";
     font-size: 29px;
     font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  button:hover {
+    color: white;
+    font-weight: 700;
+    border-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 14px 27px;
+    background: linear-gradient(
+      293deg,
+      rgba(199, 179, 206, 0.66) 20.64%,
+      rgba(191, 205, 213, 0.66) 85.29%
+    );
+    backdrop-filter: blur(15.050000190734863px);
   }
 }

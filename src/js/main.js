@@ -156,3 +156,40 @@ gsap.from(".end-tiger-container", {
   top: "40vh",
   delay: 0.8,
 });
+
+/* -------- bouton apparition -------- */
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".fall-section",
+      start: "109% bottom",
+      end: "110% bottom",
+      scrub: true,
+      // markers: true,
+    },
+  })
+  .to(".button-go-start", {
+    display: "block",
+  })
+  .to(".button-go-start", {
+    opacity: 1,
+  });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".fall-section",
+      start: "105% bottom",
+      end: "106% bottom",
+      scrub: true,
+      // markers: true,
+    },
+  })
+  .to(".button-go-shop", {
+    opacity: 0,
+    left: "50%",
+  })
+  .to(".button-go-shop", {
+    display: "block",
+  });
