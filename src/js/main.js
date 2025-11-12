@@ -207,30 +207,23 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".fall-section",
-      start: "-200px bottom",
-      end: "105% top",
+      start: "-600px bottom",
+      end: "110% top",
       scrub: true,
-      markers: true,
+      // markers: true,
     },
   })
   .to(
     ".case-fixed",
     {
-      top: "0px",
+      top: "25%",
     },
     0
   )
   .to(
     ".case-fixed",
     {
-      top: "40px",
-    },
-    0.6
-  )
-  .to(
-    ".case-fixed",
-    {
-      top: "-20px",
+      top: "20%",
     },
     0.8
   )
@@ -239,5 +232,5 @@ gsap
     {
       top: "100vh",
     },
-    1.5
+    2
   );

@@ -1,0 +1,26 @@
+.button-go-shop {
+  padding: 8px 12px;
+  position: fixed;
+  z-index: 1000;
+  right: 30px;
+  top: 24px;
+  font-family: "Novel Sans Pro";
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.46);
+  backdrop-filter: blur(3.6500000953674316px);
+  border: none;
+  transition: 0.3s;
+  a {
+    text-decoration: none;
+  }
+}
+
+.button-go-shop:hover {
+  background: var(
+    --Environment-gradient,
+    linear-gradient(272deg, #bc63da 0%, #dd533d 96.12%)
+  );
+  color: white;
+}
