@@ -90,21 +90,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 //bestiole qui tombe
 
-// ici je ralenti le screen a, pour que le plan au dessus soit plus rapide
-gsap.to(".case-fixed", {
-  scrollTrigger: {
-    trigger: ".case-fixed",
-    // placer stard à l'endroit ou screen b commence a etre visible
-    start: "center center",
-    // placer end a l'endroit ou screen a n'est plus visible
-    end: "2000px center",
-    scrub: true,
-    // markers: true,
-  },
-  // chiffre du top changera la vitesse
-  top: "1800",
-  ease: "linear",
-});
+// // ici je ralenti le screen a, pour que le plan au dessus soit plus rapide
+// gsap.to(".case-fixed", {
+//   scrollTrigger: {
+//     trigger: ".case-fixed",
+//     // placer stard à l'endroit ou screen b commence a etre visible
+//     start: "center center",
+//     // placer end a l'endroit ou screen a n'est plus visible
+//     end: "2000px center",
+//     scrub: true,
+//     // markers: true,
+//   },
+//   // chiffre du top changera la vitesse
+//   top: "1800",
+//   ease: "linear",
+// });
 
 // gsap.to(".case-1", {
 //   scrollTrigger: {
