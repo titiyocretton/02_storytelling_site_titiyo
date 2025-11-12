@@ -187,37 +187,57 @@ gsap.from(".thunder-right", {
 
 /* -------- chute de la bestiole -------- */
 
-gsap.from(".case-fixed", {
-  scrollTrigger: {
-    trigger: ".fall-section",
-    start: "-100px bottom",
-    end: "400px top",
-    scrub: 1,
-    markers: true,
-  },
-  top: "-750px",
-});
+// // ici je ralenti le screen a, pour que le plan au dessus soit plus rapide
+// gsap.to(".case-fixed", {
+//   scrollTrigger: {
+//     trigger: ".case-fixed",
+//     // placer stard à l'endroit ou screen b commence a etre visible
+//     start: "center center",
+//     // placer end a l'endroit ou screen a n'est plus visible
+//     end: "2000px center",
+//     scrub: true,
+//     // markers: true,
+//   },
+//   // chiffre du top changera la vitesse
+//   top: "1800",
+//   ease: "linear",
+// });
 
-gsap.fromTo(
-  ".case-fixed",
-  {
+gsap
+  .timeline({
     scrollTrigger: {
       trigger: ".fall-section",
-      start: "bottom bottom",
-      end: "bottom top",
-      scrub: 1,
+      start: "-200px bottom",
+      end: "105% top",
+      scrub: true,
       markers: true,
     },
-    top: "0",
-  },
-  {
-    scrollTrigger: {
-      trigger: ".fall-section",
-      start: "bottom bottom",
-      end: "bottom top",
-      scrub: 1,
-      markers: true,
+  })
+  .to(
+    ".case-fixed",
+    {
+      top: "0px",
     },
-    top: "100vh",
-  }
-);
+    0
+  )
+  .to(
+    ".case-fixed",
+    {
+      top: "40px",
+    },
+    0.6
+  )
+  .to(
+    ".case-fixed",
+    {
+      top: "-20px",
+    },
+    0.8
+  )
+  .to(
+    ".case-fixed",
+    {
+      top: "100vh",
+    },
+    1.5
+  );
