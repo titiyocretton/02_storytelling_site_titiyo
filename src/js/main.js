@@ -193,3 +193,38 @@ gsap
   .to(".button-go-shop", {
     display: "block",
   });
+
+/* -------- fall case background animation -------- */
+
+gsap.from(".fall-container-cow-tiger :first-child", {
+  scrollTrigger: {
+    trigger: ".fall-container-cow-tiger :first-child",
+    start: "top bottom",
+    end: "bottom top",
+    // markers: true,
+    scrub: true,
+  },
+  top: "20vh",
+});
+
+gsap.from(".fall-container-fox :first-child", {
+  scrollTrigger: {
+    trigger: ".fall-container-fox :first-child",
+    start: "top bottom",
+    end: "bottom top",
+    // markers: true,
+    scrub: true,
+  },
+  top: "30vh",
+});
+
+gsap.from(".fall-container-tiger :first-child", {
+  scrollTrigger: {
+    trigger: ".fall-container-tiger :first-child",
+    start: "top bottom",
+    end: "bottom top",
+    // markers: true,
+    scrub: true,
+  },
+  top: "0",
+});
