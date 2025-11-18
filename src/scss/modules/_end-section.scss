@@ -3,10 +3,11 @@
   font-family: "Novel Sans Pro";
 
   p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: normal;
     padding-bottom: 24px;
+    line-height: 130%;
   }
 
   span {
@@ -24,13 +25,17 @@
   h4 {
     font-size: 20px;
     font-weight: 650;
-    line-height: 122.923%; /* 24.585px */
+    margin-bottom: 10px;
+    // line-height: 122.923%; /* 24.585px */
   }
 
   .end-detail-container {
     font-size: 16px;
     font-weight: 200;
     line-height: 120%;
+    p {
+      font-weight: 300;
+    }
   }
 }
 
@@ -49,7 +54,6 @@
 
 .end-tiger-vide {
   position: relative;
-  background: rgba(255, 0, 0, 0.275);
   height: 0;
   align-self: flex-end;
   display: flex;
