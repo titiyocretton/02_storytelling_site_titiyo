@@ -15,6 +15,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    :first-child {
+      z-index: 20;
+      width: 400px;
+      height: 200px;
+      margin-top: 100px;
+      margin-right: 40px;
+      position: absolute;
+    }
+
+    :nth-child(2) {
+      position: absolute;
+      width: 100vw;
+      padding: 0 80px;
+      transition: 0.15s;
+    }
+
     img {
       max-width: 100%;
     }
@@ -64,4 +81,8 @@
   display: flex;
   gap: 160px;
   margin: 120px 0;
+}
+
+.horizontal-container-1 :first-child:hover + img {
+  opacity: 0;
 }
