@@ -140,7 +140,7 @@ gsap
   .to(
     ".case-fixed",
     {
-      top: "100vh",
+      top: "110vh",
     },
     2
   );
