@@ -43,15 +43,15 @@
 
 .end-section {
   padding: 918px 0 42px;
-  background-image: url(../img/section-end/background-1.png?as=webp);
+  background-image: url(../img/section-end/background-1.png?as=webp&width=1440);
   background-position: bottom;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   img {
     width: 100%;
   }
-  overflow: hidden;
 }
 
 .end-tiger-vide {
