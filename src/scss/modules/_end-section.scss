@@ -1,6 +1,5 @@
 .end-text-container {
   padding-top: 12px; /*j'ai arrondi par rapport à la maquette*/
-  font-family: "Novel Sans Pro";
 
   p {
     font-size: 20px;
@@ -8,6 +7,7 @@
     line-height: normal;
     padding-bottom: 24px;
     line-height: 130%;
+    font-family: "Novel Sans Pro", sans-serif;
   }
 
   span {
@@ -20,6 +20,7 @@
     font-size: 16px;
     font-weight: 200;
     padding-bottom: 12px; /* arrondi */
+    font-family: "Novel Sans Pro", sans-serif;
   }
 
   h4 {
@@ -27,6 +28,7 @@
     font-weight: 650;
     margin-bottom: 10px;
     // line-height: 122.923%; /* 24.585px */
+    font-family: "Novel Sans Pro", sans-serif;
   }
 
   .end-detail-container {
